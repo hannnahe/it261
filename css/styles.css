@@ -1,0 +1,132 @@
+/*styles for website folder's site*/
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body{
+    background:#e6f0fa;
+  
+}
+
+header{
+    background:#a8c7e3;
+    height:250px;
+    margin-bottom: 20px;
+    
+}
+
+.inner-header {
+    width:90%;
+    margin:0 auto 25px;
+    
+}
+.logo{
+    height:170px;
+   
+}
+
+nav ul {
+    float:center;
+}
+
+nav li {
+    float:left;
+    margin-left:75px;
+    list-style-type: none;
+    font-size:24px;
+    font-weight:700;
+   
+   
+}
+
+nav a {
+  text-decoration-line: underline;
+  text-decoration-style: wavy;
+   
+}
+
+li {
+   list-style-type:none; 
+}
+
+
+a:link, a:visited {
+    color:#294d80;
+}
+a:hover {
+    color: #f58d42;
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+}
+
+#wrapper{
+ width:90%;
+    margin:0 auto;   
+}
+
+h1{
+    font-weight:700;
+    margin-bottom:50px;
+    color:#294d80;
+}
+h4{
+    font-weight:700;
+    margin-bottom:inherit;
+    font-size:26px;
+}
+
+.mamp {
+    max-width:100%;
+    border:3px solid #085ba6;
+}
+
+#hero {
+    margin-bottom:30px;
+    margin-top:20px;
+    width:40%;
+}
+p{
+    font-size:18px;
+}
+
+main{
+    width:60%;
+    float:left;
+    margin-bottom: 20px;
+}
+main h4{
+    margin-top: 10px;
+}
+
+aside{
+    width:30%;
+    float:right;
+    margin-bottom: 20px;
+}
+
+.exercises{
+    border:3px solid #085ba6;
+    padding:25px 50px 25px;
+    font-size:26px;
+}
+
+footer{
+    height:50px;
+    line-height:50px;
+    border-top:3px solid #085ba6;
+    margin-bottom: 70px;
+    clear: both;
+}
+
+footer a {
+    text-decoration:none;
+}
+
+footer li {
+    float:left;
+    margin-right:30px;
+    list-style-type:none;
+}
