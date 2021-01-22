@@ -7,16 +7,17 @@
 }
 
 body{
-    background:white;
+    background:#d3dff2;
     
 }
 
 header{
-    background:#f5b28c;
+    background:#97add1;
     height:150px;
     overflow:hidden;
     margin-bottom: 20px;
     padding:40px 0;
+    border-bottom:1px #18325c solid;
     
 }
 
@@ -57,7 +58,7 @@ nav a {
 }
 
 a.active {
-    color:darkgreen;
+    color:#195159;
     font-weight: 900;
 }
 
@@ -68,6 +69,28 @@ a.active {
     clear:both;
 }
 
+wrapper.pink {
+background:pink;
+}
+
+wrapper.yellow {
+background:yellow;
+}
+wrapper.lightblue {
+background:lightblue;
+}
+wrapper.beige {
+background:beige;
+}
+wrapper.orange {
+background:orange;
+}
+wrapper.grey {
+background:grey;
+}
+wrapper.lightgreen {
+    background:lightgreen;}
+
 #hero {
     background:#f5e5d7;
     height:300px; 
@@ -76,15 +99,27 @@ a.active {
 }
 
 main{
-    width:580px;
+    width:60%;
     float:left;
     margin-bottom: 20px;
 }
 
+h1{
+    color:#300511;
+   margin:0 auto;
+    padding-bottom: 30px;
+}
+img {
+    max-width:60;
+}
 aside{
-    width:340px;
+    width:30%;
     float:right;
     margin-bottom: 20px;
+}
+
+aside li {
+ list-style: circle;   
 }
 
 footer{

@@ -126,6 +126,7 @@ echo 'It\'s afternoon!<br>';
 else {
 echo 'Good eve!<br>';
 }///end else
+    
 echo $coffee; ?>
 </h1>
 <img src="<?php echo $pic; ?>" alt="<?php echo $alt; ?>">
