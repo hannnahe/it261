@@ -7,10 +7,10 @@ include('includes/header.php');
 
 
 <div id="wrapper">
-<h1>Here lies the content of my home page.</h1>
-<div id="hero">
+<h1>Hi! This is the daily page</h1>
 
-</div><!--endhero-->
+
+
 <main>
 <h2> Headline within main </h2>       
 </main>

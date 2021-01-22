@@ -3,16 +3,20 @@
     padding:0;
     margin:0;
     box-sizing:border-box;
+     font-family: 'Inter', sans-serif;
 }
 
 body{
     background:white;
+    
 }
 
 header{
-    background:#b9ceac;
+    background:#f5b28c;
     height:150px;
+    overflow:hidden;
     margin-bottom: 20px;
+    padding:40px 0;
     
 }
 
@@ -20,6 +24,12 @@ header{
     width:940px;
     margin:0 auto;
 }
+#logo {
+    height: 100px;
+    float: left;
+}
+
+
 
 nav ul {
     float:right;
@@ -27,22 +37,39 @@ nav ul {
 
 nav li {
     float:left;
-    margin-left:25px;
+    margin-left:50px;
     list-style-type: none;
+    font-weight:700;
 }
+a:link, a:visited {
+    color:#52021f;
+}
+
+a:hover {
+    color: #04757d;
+    text-decoration-line: underline;
+    text-decoration-style: dotted;
+}
+
 
 nav a {
     text-decoration:none;
 }
 
+a.active {
+    color:darkgreen;
+    font-weight: 900;
+}
+
 
 #wrapper{
- width:940px;
-    margin:0 auto;   
+ width:90%;
+    margin:0 auto; 
+    clear:both;
 }
 
 #hero {
-    background:navy;
+    background:#f5e5d7;
     height:300px; 
     /* once we have an image remove the height of the hero and or background*/
     margin-bottom:20px;
@@ -68,7 +95,8 @@ footer{
 }
 
 footer a {
-    text-decoration:none;
+    text-decoration-line: underline;
+  text-decoration-style: dotted;
 }
 
 footer li {

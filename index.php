@@ -15,7 +15,7 @@
 <body>
    <header>
     <div class="inner-header">
-    <a href="index.html"><img class="logo" src="images/logo.png" alt="logo"></a>
+    <a href="index.php"><img class="logo" src="images/logo.png" alt="logo"></a>
      <nav>
       <ul>  
         <li><a href="index.php">Home</a></li>
@@ -56,6 +56,10 @@
         <li><h5>Week 2</h5></li>
         <ul>
             <li><a href="weeks/week2/var.php">var.php</a></li>
+            <li><a href="weeks/week2/var2.php">var2.php</a></li>
+            <li><a href="weeks/week2/currency.php">currency.php</a></li>
+            <li><a href="weeks/week2/currency-logic.php">currency-logic.php</a></li>
+            <li><a href="weeks/week2/heredoc.php">heredoc.php</a></li>
 
         </ul>
         <li><h5>Week 3</h5></li>
