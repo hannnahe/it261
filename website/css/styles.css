@@ -4,6 +4,7 @@
     margin:0;
     box-sizing:border-box;
      font-family: 'Inter', sans-serif;
+    color:#300511;
 }
 
 body{
@@ -13,27 +14,30 @@ body{
 
 header{
     background:#97add1;
-    height:150px;
+    height:190px;
     overflow:hidden;
-    margin-bottom: 20px;
-    padding:40px 0;
+    
+   /* padding:40px 0;*/
     border-bottom:1px #18325c solid;
     
 }
 
 .inner-header {
-    width:940px;
+    width:90%;
     margin:0 auto;
 }
-#logo {
-    height: 100px;
+#logo { 
+    height: 110px;
     float: left;
+    display: block;
+    clear:right;
 }
 
 
 
 nav ul {
     float:right;
+    margin-top:120px;
 }
 
 nav li {
@@ -64,32 +68,37 @@ a.active {
 
 
 #wrapper{
- width:90%;
+ width:100%;
     margin:0 auto; 
     clear:both;
+    padding-left:5%;
 }
 
-wrapper.pink {
-background:pink;
+
+/*styles for daily page start here*/
+#wrapper.pink {
+background:#f2dce7;
 }
 
-wrapper.yellow {
-background:yellow;
+#wrapper.lilac {
+background:#e4e1f7;
 }
-wrapper.lightblue {
-background:lightblue;
+#wrapper.green {
+background:#afc4b5;
 }
-wrapper.beige {
-background:beige;
+#wrapper.beige {
+background:#ede9dd;
 }
-wrapper.orange {
-background:orange;
+#wrapper.orange {
+background:#e6d3be;
 }
-wrapper.grey {
-background:grey;
+#wrapper.mango {
+background:#e3c1b6;
 }
-wrapper.lightgreen {
-    background:lightgreen;}
+#wrapper.blue {
+    background:#b1cae3;}
+/*styles for daily page end here*/
+
 
 #hero {
     background:#f5e5d7;
@@ -105,17 +114,32 @@ main{
 }
 
 h1{
-    color:#300511;
+    color:#5c113a;
    margin:0 auto;
     padding-bottom: 30px;
+    padding-top: 30px;
+        text-decoration-line: underline;
+    text-decoration-style: wavy;
 }
+
 img {
-    max-width:60;
+    max-width:100%;
+    display:block;
+    margin-top: 20px;
+    margin-bottom:  20px;
+   margin-right: 10px;
+  
+}
+
+img.room{
+    max-width: 95%;
 }
 aside{
     width:30%;
     float:right;
     margin-bottom: 20px;
+  
+
 }
 
 aside li {

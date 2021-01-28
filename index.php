@@ -20,7 +20,7 @@
   <ul>  
     <li><a href="index.php">Home</a></li>
     <li><a href="website/daily.php">Switch ~ 3</a></li>  
-    <li><a href="">Troubleshoot ~ 4</a></li>
+    <li><a href="adder.php">Troubleshoot ~ 4</a></li>
     <li><a href="">Calculator</a></li>
     <li><a href="">Email</a></li>
     <li><a href="">Gallery</a></li>
@@ -52,57 +52,60 @@
 </div><!--endhero-->
 <div class="exercises">
 <h3>Weekly Class Exercises:</h3>
+        <ul>
+<li><h5>Week 2</h5>
+
+    <ul>
+<li><a href="weeks/week2/var.php">var.php</a></li>
+<li><a href="weeks/week2/var2.php">var2.php</a></li>
+<li><a href="weeks/week2/currency.php">currency.php</a></li>
+<li><a href="weeks/week2/currency-logic.php">currency-logic.php</a></li>
+<li><a href="weeks/week2/heredoc.php">heredoc.php</a></li>
+
+    </ul></li>
+
+<li><h5>Week 3</h5>
 <ul>
-    <li><h5>Week 2</h5></li>
-    <ul>
-        <li><a href="weeks/week2/var.php">var.php</a></li>
-        <li><a href="weeks/week2/var2.php">var2.php</a></li>
-        <li><a href="weeks/week2/currency.php">currency.php</a></li>
-        <li><a href="weeks/week2/currency-logic.php">currency-logic.php</a></li>
-        <li><a href="weeks/week2/heredoc.php">heredoc.php</a></li>
+<li><a href="weeks/week3/datatypes.php">datatypes.php</a></li>
+<li><a href="weeks/week3/date.php">date.php</a></li>
+<li><a href="weeks/week3/foreach.php">foreach.php</a></li>
+<li><a href="weeks/week3/if.php">if.php</a></li>
+<li><a href="weeks/week3/switch.php">switch.php</a></li>
+<li><a href="weeks/week3/milestokm.php">E.C. - Miles to KM</a></li>
 
-    </ul>
-    <li><h5>Week 3</h5></li>
-    <ul>
-        <li><a href="weeks/week3/datatypes.php">datatypes.php</a></li>
-         <li><a href="weeks/week3/date.php">date.php</a></li>
-        <li><a href="weeks/week3/foreach.php">foreach.php</a></li>
-        <li><a href="weeks/week3/if.php">if.php</a></li>
-        <li><a href="weeks/week3/switch.php">switch.php</a></li>
-         <li><a href="weeks/week3/milestokm.php">E.C. - Miles to KM</a></li>
+</ul></li>
 
-    </ul>
-    <li><h5>Week 4</h5></li>
-     <ul>
-        <li><a href="">exercise here</a></li>
-         <li><a href="">exercise here</a></li>
-    </ul>
-    <li><h5>Week 5</h5></li>
-     <ul>
-        <li><a href="">exercise here</a></li>
-         <li><a href="">exercise here</a></li>
-    </ul>
-    <li><h5>Week 6</h5></li>
-     <ul>
-        <li><a href="">exercise here</a></li>
-         <li><a href="">exercise here</a></li>
-    </ul>
-    <li><h5>Week 7</h5></li>
-     <ul>
-        <li><a href="">exercise here</a></li>
-         <li><a href="">exercise here</a></li>
-    </ul>
-    <li><h5>Week 8</h5></li>
-     <ul>
-        <li><a href="">exercise here</a></li>
-         <li><a href="">exercise here</a></li>
-    </ul>
-    <li><h5>Week 9</h5></li>
-     <ul>
-        <li><a href="">exercise here</a></li>
-         <li><a href="">exercise here</a></li>
-    </ul> 
+<li><h5>Week 4</h5>
+<ul>
+<li><a href="weeks/week4/form1.php">form1.php</a></li>
+<li><a href="weeks/week4/form2.php">form2.php</a></li>
 </ul>
+<li><h5>Week 5</h5>
+<ul>
+<li><a href="">exercise here</a></li>
+ <li><a href="">exercise here</a></li>
+</ul></li>
+<li><h5>Week 6</h5>
+<ul>
+<li><a href="">exercise here</a></li>
+<li><a href="">exercise here</a></li>
+</ul></li>
+<li><h5>Week 7</h5>
+<ul>
+<li><a href="">exercise here</a></li>
+<li><a href="">exercise here</a></li>
+</ul></li>
+<li><h5>Week 8</h5>
+<ul>
+<li><a href="">exercise here</a></li>
+<li><a href="">exercise here</a></li>
+</ul></li>
+<li><h5>Week 9</h5>
+<ul>
+<li><a href="">exercise here</a></li>
+<li><a href="">exercise here</a></li>
+</ul> </li>
+    </ul>
 </div>
 </aside>
 
@@ -114,9 +117,9 @@
     <li> All Rights Reserved
     </li>
     <li><a href="index.php">Portal Page</a></li>
-    <li> <a href="https://validator.w3.org/check/referer" target="_blank">Valid HTML</a>
+    <li> <a href="https://validator.w3.org/check?uri=referer">Valid HTML</a>
     </li>
-    <li> <a href="https://jigsaw.w3.org/css-validator/check?uri=referer" target="_blank">Valid CSS</a>
+    <li> <a href="https://jigsaw.w3.org/css-validator/check?uri=referer">Valid CSS</a>
     </li>
 </ul>
 </footer>
