@@ -14,30 +14,27 @@ body{
 
 header{
     background:#97add1;
-    height:190px;
+   
     overflow:hidden;
-    
-   /* padding:40px 0;*/
+  
     border-bottom:1px #18325c solid;
     
 }
 
 .inner-header {
-    width:90%;
+    max-width:1200px;
     margin:0 auto;
 }
 #logo { 
     height: 110px;
     float: left;
     display: block;
-    clear:right;
 }
-
 
 
 nav ul {
     float:right;
-    margin-top:120px;
+    margin-top: 20px;
 }
 
 nav li {
@@ -68,10 +65,9 @@ a.active {
 
 
 #wrapper{
- width:100%;
-    margin:0 auto; 
+margin:0 auto; 
     clear:both;
-    padding-left:5%;
+    max-width:1200px;
 }
 
 
@@ -108,7 +104,7 @@ background:#e3c1b6;
 }
 
 main{
-    width:60%;
+    max-width: 700px;
     float:left;
     margin-bottom: 20px;
 }
@@ -130,12 +126,13 @@ img {
    margin-right: 10px;
   
 }
-
-img.room{
-    max-width: 95%;
+img.room {
+    margin-right: 20px;
 }
+
+
 aside{
-    width:30%;
+    max-width:450px;
     float:right;
     margin-bottom: 20px;
   
@@ -162,4 +159,33 @@ footer li {
     float:left;
     margin-right:30px;
     list-style-type:none;
+}
+
+/** media queries!*/
+
+@media screen and (max-width:1200px){
+    #wrapper {
+        margin: 0 20px;
+    }
+ 
+}
+
+
+@media screen and (max-width:800px){
+    
+    #logo{
+        float:none;
+        width:auto;
+        margin: 0 auto;
+    }
+    nav ul {float:none;} 
+}
+
+
+@media screen and (max-width:700px){
+    main, aside 
+    {float:none;
+    width:auto; }
+    
+    
 }

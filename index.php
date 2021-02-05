@@ -79,11 +79,18 @@
 <ul>
 <li><a href="weeks/week4/form1.php">form1.php</a></li>
 <li><a href="weeks/week4/form2.php">form2.php</a></li>
+ <li><a href="weeks/week4/adder-message.php">adder-message.php</a></li>
+<!--<li><a href="weeks/week4/adder-int.php">adder-int.php</a></li>-->
+<li><a href="weeks/week4/celcius-form.php">celcius-form.php</a></li>
+<li><a href="weeks/week4/login-basic.php">login-basic.php</a></li>   
 </ul>
 <li><h5>Week 5</h5>
 <ul>
-<li><a href="">exercise here</a></li>
- <li><a href="">exercise here</a></li>
+<li><a href="weeks/week5/currency.php">currency.php</a></li>
+ <li><a href="weeks/week5/currency1a.php">currency1a.php</a></li>
+     <li><a href="weeks/week5/currency2.php">currency2.php</a></li>
+     <li><a href="weeks/week5/currency3.php">currency3.php</a></li>
+     <li><a href="weeks/week5/currency4.php">currency4.php</a></li>
 </ul></li>
 <li><h5>Week 6</h5>
 <ul>
