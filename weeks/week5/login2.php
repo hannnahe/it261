@@ -4,8 +4,41 @@
 <meta charset="UTF-8">
 <title>Second Login Form</title>
 <style>
+*{
+padding:0;
+margin:0;
+box-sizing:border-box; 
+}
+
+form{
+max-width:600px;
+margin: 20px auto; 
+}
+
+fieldset{
+margin-top:35px;
+padding:35px;
+}
+
+li{
+list-style-type: none;
+}
     
-    
+label{
+display:block;
+margin-bottom:10px;
+margin-top:10px;    
+}
+
+input[type=text],
+input[type=submit]{
+margin-bottom:10px; 
+}
+
+input[type=submit]{
+display:block; 
+margin-top:10px;
+}
 </style>
 </head>
 
@@ -20,7 +53,7 @@
     <li><input type="radio" name="confirm" value="no">No</li>    
     </ul>
  <label>Please enter your Password</label> 
-<input type="password" name="password>">
+<input type="password" name="password">
 <input type="submit" value="Confirm">
 <p><a href="">Reset</a></p>
 </fieldset>
@@ -28,7 +61,8 @@
     
 <?php  
  if($_SERVER['REQUEST_METHOD'] == 'POST') {
-    if(empty($_POST['name'])){
+    
+     if(empty($_POST['name'])){
         echo 'Please fill out your name';
     }
      if(empty($_POST['confirm'])){
@@ -45,14 +79,14 @@
     $confirm = $_POST['confirm'];
     $password = $_POST['password'];
 
-if($confirm == 'yes') {
+if($confirm == 'yes'){
     $yes = 'checked';
-} elseif($confirm == 'no') {
+} elseif($confirm == 'no'){
     $no = 'checked';
 }
 
      
- if($confirm == 'yes' && $password == 'password') {
+ if($confirm == 'yes' && $password == 'password'){
   header('Location:index.php');
  }  
 else {header('Location:member.php');
@@ -62,11 +96,7 @@ else {header('Location:member.php');
 
  } //server request method end
 
-    
-    
-    
-    
-    
+   
 ?>
 </body>
 </html>

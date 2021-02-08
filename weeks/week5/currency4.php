@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Basic Currency Form</title>
+<title>Basic Currency Form with Option Stickiness</title>
 <style>
      *{margin:0;
     padding:0;

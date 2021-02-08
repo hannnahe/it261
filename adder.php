@@ -65,7 +65,7 @@ echo '<p><a href="">Reset page</a></p>';
 }//close isset
 
 
- //Olga, sorry if some of these line numbers are off. As I continued to edit the document, things changed lines! I tried my best to fix them all , but may have mixed a few up :)   
+ //Olga, sorry if some of these line numbers are off. As I continued to edit the document, things changed lines! I tried my best to fix them all , but may have mixed a few up by a line or two:)   
 // moved html doctype to top of document
 //line 39 added fieldset opening tag and closed it on line 47
 //line 55- added $_POST['num2'] 
