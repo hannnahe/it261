@@ -103,7 +103,7 @@ if(!empty($_POST['wines'])) {
           $_POST['comments'],
           $_POST['agree'])) {
 
-        $to = 'ebertshannah@gmail.com';
+        $to = 'olga.szemetylo@seattlecolleges.edu';
         $subject = 'Test email for form 4, ' .date('m/d/y');
         $body = 'Name: '.$firstName.' '.$lastName.''.PHP_EOL.'
         Email : '.$email.''.PHP_EOL.'
