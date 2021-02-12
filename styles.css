@@ -1,0 +1,37 @@
+/*styles for form*/
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+form{
+    max-width:600px;
+    margin:20px auto;
+}
+
+fieldset{
+    padding:10px;
+}
+
+label{
+    display:block;
+    margin-bottom:5px;
+}
+
+.err{
+    display:block;
+    color:#f00;
+    font-style:oblique;
+    margin-bottom:15px;
+}
+
+form ul{
+    list-style-type:none;
+    margin-bottom:10px;
+}
+
+input, select, textarea{
+    margin-bottom:10px;
+    
+}
