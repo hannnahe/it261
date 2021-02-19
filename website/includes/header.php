@@ -16,31 +16,8 @@
 <div class="inner-header">
 <a href="../index.php"><img id="logo" src="../images/logo.png" alt="logo"></a>
 <nav>
-<!--
-<ul>  
-<li><a href="">Home</a></li>
-<li><a href="">About</a></li>  
-<li><a href="">Daily</a></li>
-  <li><a href="">People</a></li>
-<li><a href="">Contact</a></li>
-  <li><a href="">Gallery</a></li>
-</ul>
--->
 <ul>
- <?php 
-
-   //if we are on this page, that would be our active page; if were not on this page, it is not active
-  foreach($nav as $key => $value ) {
-      if(THIS_PAGE == $key) {
-      echo '<li><a class="active" href="'.$key.'">'.$value.'</a></li>';
-  }
-      else { echo '<li><a href="'.$key.'">'.$value.'</a></li>';
-          
-      }//end else
-
-  }//end foreach 
-
-   ?>
+<?php echo makeLinks($nav); ?>
  </ul> 
 
 

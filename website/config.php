@@ -1,6 +1,7 @@
 <?php
-
 define('THIS_PAGE', basename($_SERVER['PHP_SELF']));
+
+date_default_timezone_set('America/Los_Angeles');
 
 $nav ['index.php'] = 'Home';
 $nav ['about.php'] = 'About';
@@ -8,6 +9,30 @@ $nav ['daily.php'] = 'Daily';
 $nav ['people.php'] = 'People';
 $nav ['contact.php'] = 'Contact';
 $nav ['gallery.php'] = 'Gallery';
+
+function makeLinks($nav){
+ $myReturn = '';
+foreach($nav as $key => $value){
+ if(THIS_PAGE == $key) {
+  $myReturn .= '<li><a class="active" href="'.$key.'">'.$value.'</a></li>';  
+ }  else {
+  $myReturn .= '<li><a href="'.$key.'">'.$value.'</a></li>';     
+ }//end else       
+}//close foreachloop
+   return $myReturn;   
+}//close function
+
+//////random function for contact.php  .. need to create function
+//$housePhotos[0] = 'beach';
+//$housePhotos[1] = 'mountain';
+//$housePhotos[2] = 'house';
+//$housePhotos[3] = 'paris';
+//$housePhotos[4] = 'forest';
+//
+//$i = rand(0,4);
+//$selectedImage = 'images/'.$housePhotos[$i].'.jpg';
+//echo '<img src="'.$selectedImage.'" alt="'.$housePhotos[$i].'">';
+////
 
 switch(THIS_PAGE) {
 case 'index.php'  : 
@@ -39,6 +64,15 @@ $body= 'contact';
 $title = 'Gallery page of Website Project';
 $body= 'gallery';
     break;
+
+    case 'feedback.php'  : 
+$title = 'Thanks!';
+$body= 'feedback';
+    break;
+        
+    default:
+        $body = 'inner';
+        $title = 'Hannah\'s website';
 }
 
 
@@ -108,3 +142,143 @@ $content = 'Aster doesn\'t smell that good in my opinion but they\'re all over t
 $background = 'blue';
 break;  
 }
+
+
+//form config below:
+
+$firstName=' ';
+$lastName=' ';
+$email=' ';
+$season=' ';
+$colors=' ';
+$house=' ';
+$comments=' ';
+$agree=' ';
+$phone=' ';
+
+$firstNameErr=' ';
+$lastNameErr=' ';
+$emailErr=' ';
+$seasonErr=' ';
+$colorsErr=' ';
+$houseErr=' ';
+$commentsErr=' ';
+$agreeErr=' ';
+$phoneErr=' ';
+
+
+
+if($_SERVER['REQUEST_METHOD'] == "POST"){
+
+if(empty($_POST['firstName'])){
+    $firstNameErr= 'First name please!';
+} else {
+    $firstName = $_POST['firstName'];
+}
+
+if(empty($_POST['lastName'])){
+    $lastNameErr= 'Last name please!';
+} else {
+    $lastName = $_POST['lastName'];
+}    
+
+if(empty($_POST['email'])){
+    $emailErr= 'Email please!';
+} else {
+    $email = $_POST['email'];
+}
+    
+if(empty($_POST['phone'])) {  // if empty, type in your number
+$phoneErr = 'Your phone number please!';
+} elseif(array_key_exists('phone', $_POST)){
+if(!preg_match('/^[0-9]{3}-[0-9]{3}-[0-9]{4}$/', $_POST['phone']))
+{ // if you are not typing the requested format of xxx-xxx-xxxx, display Invalid format
+$phoneErr = 'Invalid format! Please type xxx-xxx-xxxx format.';
+} else{
+$phone = $_POST['phone'];
+}
+}
+    
+    
+if(empty($_POST['season'])){
+    $seasonErr= 'Please check one, and I know they\'re all great in their own way so this shouldn\'t be too hard!';
+} else {
+    $season = $_POST['season'];
+}
+    
+if(empty($_POST['colors'])){
+    $colorsErr= 'Pick a favorite color, or a few!';
+} else {
+    $colors = $_POST['colors'];
+}    
+    
+if($_POST['house'] == 'NULL'){
+    $houseErr= 'Choose where you\'d most like to live';
+} else {
+    $house = $_POST['house'];
+} 
+   
+if(empty($_POST['comments'])){
+    $commentsErr= 'Anything else you\'d like me to know?';
+} else {
+    $comments = $_POST['comments'];
+}     
+    
+if(empty($_POST['agree'])){
+    $agreeErr= 'Sorry, but you must agree to continue';}
+    else{
+    $agree = $_POST['agree'];
+}
+    
+function myColors() {
+    $myReturn = ''; 
+
+if(!empty($_POST['colors'])) {
+    $myReturn = implode(', ', $_POST['colors']);
+} return $myReturn;
+} //closefunction  
+    
+    
+ if(isset($_POST['firstName'],
+          $_POST['lastName'],
+          $_POST['email'],
+          $_POST['phone'],
+          $_POST['season'],
+          $_POST['colors'],
+          $_POST['house'],
+          $_POST['comments'],
+          $_POST['agree'])) {
+
+        $to = 'ebertshannah@gmail.com';
+        $subject = 'Email from Hannah\'s form, ' .date('h:i A');
+        $body = 'Name: '.$firstName.' '.$lastName.''.PHP_EOL.'
+        Email : '.$email.''.PHP_EOL.'
+        Phone #: '.$phone.''.PHP_EOL.'
+        Favorite Season: '.$season.''.PHP_EOL.'
+        Comments: '.$comments.''.PHP_EOL.'
+        Where you\'d most like to live: '.$house.''.PHP_EOL.'
+        Favorite colors: '.myColors().'';
+    $headers = array(
+    'From' => 'no-reply@hannaheberts.com',
+    'Reply-to' => ' '.$email.' ',
+    );
+     
+
+if($_POST['firstName'] !== '' && 
+  $_POST['lastName'] !== '' &&
+  $_POST['email'] !== '' &&
+  $_POST['colors'] !== '' &&
+  $_POST['comments'] !== '' &&
+  $_POST['season'] !== '' &&
+  $_POST['agree'] !== '' && 
+$_POST['phone'] !== '' && preg_match('/^[0-9]{3}-[0-9]{3}-[0-9]{4}$/', $_POST['phone']) &&
+  $_POST['house'] !== 'NULL'){
+    
+mail($to, $subject, $body, $headers);
+header('Location:feedback.php');
+ } 
+     
+ } //end isset 
+    
+} // end server request , end config file?
+//end form config

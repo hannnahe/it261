@@ -1,22 +1,35 @@
-<?php include('config.php');
+<?php 
+ob_start();
+include('config.php');
 include('includes/header.php');
-
-//config file has to be first to run first!
 ?>   
 
 
 
 <div id="wrapper">
-<h1>Here lies the content of my home page.</h1>
-<div id="hero">
+<h1>Hannah's IT261 Homepage</h1>
 
-</div><!--endhero-->
 <main>
-<h2> Headline within main </h2>       
+ <div id="hero">
+<?php $photos = ['img1','img2','img3','img4','img5'];
+
+
+$photos[0] = 'img1';
+$photos[1] = 'img2';
+$photos[2] = 'img3';
+$photos[3] = 'img4';
+$photos[4] = 'img5';
+
+$i = rand(0,4);
+$selectedImage = 'images/'.$photos[$i].'.jpg';
+echo '<img src="'.$selectedImage.'" alt="'.$photos[$i].'">';
+?>
+     
+</div><!--endhero-->    
 </main>
 
 <aside>
-<h3>headline w/in aside</h3>
+<h3>Aside:) </h3>
 </aside>
 
 <?php include('includes/footer.php'); ?>       

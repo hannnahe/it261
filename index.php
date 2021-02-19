@@ -22,7 +22,7 @@
     <li><a href="website/daily.php">Switch ~ 3</a></li>  
     <li><a href="adder.php">Troubleshoot ~ 4</a></li>
     <li><a href="calculating/calculating.php">Calculator</a></li>
-    <li><a href="">Email</a></li>
+    <li><a href="website/contact.php">Email</a></li>
     <li><a href="">Gallery</a></li>
     <li><a href="">Database</a></li>
     </ul>
@@ -106,8 +106,8 @@
 </ul></li>
 <li><h5>Week 7</h5>
 <ul>
-<li><a href="">exercise here</a></li>
-<li><a href="">exercise here</a></li>
+<li><a href="weeks/week7/random.php">random.php</a></li>
+<li><a href="weeks/week7/substr.php">substr.php</a></li>
 </ul></li>
 <li><h5>Week 8</h5>
 <ul>

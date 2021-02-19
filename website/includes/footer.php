@@ -1,4 +1,4 @@
-<footer>
+<footer id="footer">
     <ul>
         <li> Copyright <?php echo date('Y');?> <a href="hannaheberts.com" target="_blank">Hannah Eberts</a> 
         </li>
