@@ -22,17 +22,25 @@ foreach($nav as $key => $value){
    return $myReturn;   
 }//close function
 
-//////random function for contact.php  .. need to create function
-//$housePhotos[0] = 'beach';
-//$housePhotos[1] = 'mountain';
-//$housePhotos[2] = 'house';
-//$housePhotos[3] = 'paris';
-//$housePhotos[4] = 'forest';
-//
-//$i = rand(0,4);
-//$selectedImage = 'images/'.$housePhotos[$i].'.jpg';
-//echo '<img src="'.$selectedImage.'" alt="'.$housePhotos[$i].'">';
-////
+
+
+//////random function for contact.php
+
+$housePhotos[0] = 'beach';
+$housePhotos[1] = 'mountain';
+$housePhotos[2] = 'house';
+$housePhotos[3] = 'paris';
+$housePhotos[4] = 'forest';
+function randPhotos($housePhotos){
+$i = rand(0,4);
+$selectedImage = 'images/'.$housePhotos[$i].'.jpg';
+$myPhoto = '<img src="'.$selectedImage.'" alt="'.$housePhotos[$i].'">'; 
+return $myPhoto;
+}
+
+//end random function
+
+
 
 switch(THIS_PAGE) {
 case 'index.php'  : 
@@ -249,7 +257,7 @@ if(!empty($_POST['colors'])) {
           $_POST['comments'],
           $_POST['agree'])) {
 
-        $to = 'ebertshannah@gmail.com';
+        $to = 'oszemeo@mystudentswa.com';
         $subject = 'Email from Hannah\'s form, ' .date('h:i A');
         $body = 'Name: '.$firstName.' '.$lastName.''.PHP_EOL.'
         Email : '.$email.''.PHP_EOL.'
