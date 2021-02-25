@@ -111,7 +111,7 @@
 </ul></li>
 <li><h5>Week 8</h5>
 <ul>
-<li><a href="">exercise here</a></li>
+<li><a href="weeks/week8/people.php">people.php</a></li>
 <li><a href="">exercise here</a></li>
 </ul></li>
 <li><h5>Week 9</h5>
