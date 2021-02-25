@@ -29,7 +29,11 @@ echo '<img src="'.$selectedImage.'" alt="'.$photos[$i].'">';
 </main>
 
 <aside>
-<h3>Aside:) </h3>
+<h3>randPhotos function on Github </h3>
+    <ul>
+    <li><a href="https://github.com/hannnahe/it261/blob/main/website/config.php">config.php link</a></li>
+        <li><a href="https://github.com/hannnahe/it261/blob/main/website/contact.php">contact.php link</a></li>
+    </ul>
 </aside>
 
 <?php include('includes/footer.php'); ?>       

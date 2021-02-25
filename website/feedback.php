@@ -13,7 +13,7 @@ include('includes/header.php');
 
 <body>
     <div id="feedback">
-    <h1>Thanks for your message! Hannah will get back to you shortly. </h1>
+    <h6>Thanks for your message! Hannah will get back to you shortly. </h6>
 
         
 <?php include('includes/footer.php'); ?>    
