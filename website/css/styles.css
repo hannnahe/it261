@@ -110,7 +110,17 @@ background:#e3c1b6;
     background:#b1cae3;}
 /*styles for daily page end here*/
 
+/*styles for gallery of images*/
+table {
+  border-collapse: collapse;
+}
+table, th, td {
+  border: 1px solid navy;
+    padding:20px;
+}
+table-layout: fixed; width: 100%:
 
+/*end gallery images styles*/
 
 
 main{
