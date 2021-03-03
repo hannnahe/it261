@@ -111,17 +111,47 @@ background:#e3c1b6;
 /*styles for daily page end here*/
 
 /*styles for gallery of images*/
-table {
-  border-collapse: collapse;
+table.gallery{
+  border-collapse:collapse;
 }
-table, th, td {
+table.gallery, th, td {
   border: 1px solid navy;
     padding:20px;
 }
-table-layout: fixed; width: 100%:
-
 /*end gallery images styles*/
 
+/*db css*/
+table.data, th{
+    border-collapse: collapse;
+   padding:5px;
+    margin-top:10px;
+    margin-bottom:25px;
+    width:400px;
+    border: 1px solid navy;
+}
+#db{
+margin-left:85px; 
+ margin-bottom:100px;
+}
+
+.button{
+    margin-top:30px;
+    padding:10px;
+   background-color: white;
+  color: #52021f;
+  border: 2px solid #52021f;
+    display:inline-block;
+}
+
+main li {
+    list-style-type: none;
+}
+
+p.des{
+    margin-top:30px;
+}
+
+/*end db css*/
 
 main{
     max-width: 700px;

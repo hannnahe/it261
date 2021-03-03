@@ -17,7 +17,7 @@ $cities['Amsterdam'] = 'amste_This city is the Netherland\'s capital. It\'s know
 <h1>Cool Cities Worldwide</h1>
 <div>
     
-<table>
+<table class="gallery">
 <?php  
 foreach($cities as $name => $image): ?>
 <tr>

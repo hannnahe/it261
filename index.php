@@ -24,7 +24,7 @@
     <li><a href="calculating/calculating.php">Calculator</a></li>
     <li><a href="website/contact.php">Email</a></li>
     <li><a href="website/gallery.php">Gallery</a></li>
-    <li><a href="">Database</a></li>
+    <li><a href="website/places.php">Destinations DB</a></li>
     </ul>
     </nav>   
 
@@ -113,7 +113,7 @@
 <ul>
 <li><a href="weeks/week8/people.php">people.php</a></li>
 </ul></li>
-<li><h5>Week 9</h5>images
+<li><h5>Week 9</h5>
 <ul>
 <li><a href="">exercise here</a></li>
 <li><a href="">exercise here</a></li>
