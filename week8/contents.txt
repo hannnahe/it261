@@ -1,0 +1,15 @@
+content file
+
+Our Wk 8 contents:
+config.php --- call out the credentials.php
+credentials.php
+people.php
+people-view.php
+
+
+If this is working within the week 8 folder... then move on to website folder
+
+
+Website:
+credentials.php
+--call out credentials.php file in config.php

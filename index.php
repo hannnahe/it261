@@ -115,8 +115,8 @@
 </ul></li>
 <li><h5>Week 9</h5>
 <ul>
-<li><a href="">exercise here</a></li>
-<li><a href="">exercise here</a></li>
+<li><a href="weeks/week9/register.php">register.php</a></li>
+<li><a href="weeks/week9/login.php">login.php</a></li>
 </ul> </li>
     </ul>
 </div>
