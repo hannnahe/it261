@@ -3,11 +3,11 @@
 //if everything is correct, you are sent to index.php page!
 
 include('server.php');
-//include('includes/header.php');
+include('includes/header.php');
 
 ?>
 
-<h1>Login!</h1>
+<h1 class="center">Login!</h1>
 <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']);?>" method="post">
 <fieldset>
 <label>Username</label> 
@@ -23,4 +23,8 @@ include('server.php');
 </fieldset>
 </form>
 
-<p class="center">Haven't registered? <a href="register.php">Register here!</a></p>
+<p class="member center">Haven't registered? <a href="register.php">Register here!</a></p>
+
+</div> <!--endwrapper-->
+
+<?php include('includes/footer.php');

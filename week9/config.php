@@ -5,7 +5,7 @@ define('DEBUG', 'TRUE'); //we want to see our errors
 
 include('credentials.php');
 
-
+//all of the config information will go in here. 
 
 
 

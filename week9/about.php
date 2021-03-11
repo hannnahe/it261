@@ -1,5 +1,5 @@
 <?php
-//index.php
+//about.php
 
 session_start();
 include('config.php');
@@ -15,9 +15,9 @@ if(!isset($_SESSION['UserName'])){
  }
 
 include('includes/header.php');
- 
-//notification message
-if(isset($_SESSION['success'])) :?>
+//wrapper div starts right above in header.php?>
+ <main>
+<?php if(isset($_SESSION['success'])) :?>
 <div class="success">
 <h3>
 <?php echo $_SESSION['success'];
@@ -32,16 +32,16 @@ if(isset($_SESSION['UserName'])) :?>
 <a href="index.php?logout='1'">Log out</a>    
 </div>
 <?php endif; ?>
-<h1>Welcome to our Homepage!</h1>
+<h1>Welcome to our About page!</h1>
+<h3>This is the content in main</h3>
 
 
+</main>
 
 
-
-
-
-
-
+<aside>
+    <h3>This is the aside content</h3>
+</aside>
 
 
 </div> <!--endwrapper--!>
