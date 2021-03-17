@@ -36,7 +36,7 @@ if(isset($_SESSION['UserName'])) :?>
 <h2 class="center name">~~<?php echo $architect; ?>~~</h2> 
   <img class="switch" src="<?php echo $pic; ?>" alt="<?php echo $alt; ?>">
 <p class="desc"><?php echo $content; ?></p> 
-<img class="switch" src="<?php echo $pic2; ?>" alt="<?php echo $alt2;?>" class="switch">
+<img class="switch bottom" src="<?php echo $pic2; ?>" alt="<?php echo $alt2;?>">
 
 </main>
 

@@ -33,6 +33,7 @@ nav ul {
 nav a {text-decoration: none;
     color:#2a3540;
     font-size:1.5em;
+    color:navy;
 }
 nav a:hover{
     color:olivedrab;
@@ -145,6 +146,17 @@ aside h3{
     font-size:1.5em;
 }
 
+h4{
+    color:navy;
+}
+h4 a{
+    color:darkred;
+    text-decoration: none;
+}
+
+
+
+
 
 /*footerstyles*/
 
@@ -209,6 +221,15 @@ footer li {
     text-align:center;
 }
 
+.home{
+    color:olivedrab;
+    text-decoration: none;
+
+}
+.home:hover{
+    color:darkred;
+}
+
 .parent{
     display:flex;
     flex-direction:row;
@@ -217,6 +238,10 @@ footer li {
 .column{
     flex: 1 1 0px;
     border:1px solid navy;
+    height:495px;
+    margin-bottom:400px;
+    margin-top:50px;
+    margin-right:20px;
 }
 
 }
@@ -225,15 +250,26 @@ footer li {
     font-style:oblique;
     font-size:.9em;
     margin:10px 0;
+    display:inline-block;
 }
 
 .member{
     text-align:center;
     padding:20px;
+    border:2px solid olivedrab;
+    color:navy;
+    font-size:1.2em;
+    width:700px;
+    background-color: #bac3db;
+    margin:0 auto;
 }
 
 .switch{
     max-width:700px;
+    margin-bottom:50px;
+}
+.bottom{
+    margin-bottom:200px;
 }
 
 .btn {
@@ -259,11 +295,12 @@ footer li {
 
 .btn.right{float:right;}
 
-  
+.tres{
+    max-width:100%;
+}  
 
 .home{
     max-width:70%;
     display:block;
     margin:30px auto;
-
 }

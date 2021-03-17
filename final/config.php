@@ -122,21 +122,21 @@ $phone = $_POST['phone'];
     
     
 if(empty($_POST['familiar'])){
-    $seasonErr= 'Choose one option please!';
+    $familiarErr= 'Choose one option please!';
 } else {
-    $season = $_POST['familiar'];
+    $familiar = $_POST['familiar'];
 }
     
 if(empty($_POST['styles'])){
-    $colorsErr= 'Pick some architectural styles you like!';
+    $stylesErr= 'Pick some architectural styles you like!';
 } else {
-    $colors = $_POST['styles'];
+    $styles = $_POST['styles'];
 }    
     
 if($_POST['arch'] == 'NULL'){
-    $houseErr= 'Choose an architect to learn more about.';
+    $archErr= 'Choose an architect to learn more about.';
 } else {
-    $house = $_POST['arch'];
+    $arch = $_POST['arch'];
 } 
    
 if(empty($_POST['comments'])){
@@ -170,7 +170,7 @@ if(!empty($_POST['styles'])) {
           $_POST['comments'],
           $_POST['agree'])) {
 
-        $to = 'ebertshannah@gmail.com';
+        $to = 'szemeo@mystudentswa.com';
         $subject = 'Email from Hannah\'s architecture website, ' .date('h:i A');
         $body = 'Name: '.$firstName.' '.$lastName.''.PHP_EOL.'
         Email : '.$email.''.PHP_EOL.'

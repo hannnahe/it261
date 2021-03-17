@@ -32,7 +32,7 @@ include('includes/header.php');
 <input type="password" name="Password_2">    
 
 <button type="submit" class="btn" name="reg_user">Register</button>
-<button type="button" onclick="window.location.href='<?php echo htmlspecialchars($_SERVER['PHP_SELF']) ;?>'">Reset</button>
+<button type="button" onclick="window.location.href='<?php echo htmlspecialchars($_SERVER['PHP_SELF']) ;?>'" class="btn right">Reset</button>
 
 <?php include('includes/errors.php');?>
         
