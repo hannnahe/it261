@@ -74,7 +74,7 @@ echo 'Hannah, we have a problem!';
 </aside>
 
 
-</div> <!--endwrapper--!>
+</div> 
 <?php
 mysqli_free_result($result);
 mysqli_close($iConn);

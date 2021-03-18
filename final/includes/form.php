@@ -1,17 +1,17 @@
-<form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']) ;?>" method="post">
+<form action="<?php echo ($_SERVER['PHP_SELF']) ;?>" method="post">
 <fieldset>
  <label>First name</label>   
 <input type="text" name="firstName" value="<?php if(isset($_POST['firstName'])) echo htmlspecialchars($_POST['firstName']);?>">
-<span class="error"><?php echo $firstNameErr   ;?></span>
+<div class="error"><?php echo $firstNameErr   ;?></div>
 <label>Last name</label>   
 <input type="text" name="lastName" value="<?php if(isset($_POST['lastName'])) echo htmlspecialchars($_POST['lastName']);?>"> 
-<span class="error"><?php echo $lastNameErr   ;?></span>
+<div class="error"><?php echo $lastNameErr   ;?></div>
 <label>Email</label>   
 <input type="email" name="email" value="<?php if(isset($_POST['email'])) echo htmlspecialchars($_POST['email']);?>">
-<span class="error"><?php echo $emailErr   ;?></span>
+<div class="error"><?php echo $emailErr   ;?></div>
 <label>Phone Number</label>   
 <input type="tel" name="phone" placeholder="xxx-xxx-xxxx" value="<?php if(isset($_POST['phone'])) echo htmlspecialchars($_POST['phone']);?>"> 
-<span class="error"><?php echo $phoneErr   ;?></span>
+<div class="error"><?php echo $phoneErr   ;?></div>
       
 
 <label>How familiar are you with architectural styles?</label>   
@@ -21,11 +21,11 @@
 <li><input type="radio" name="familiar" value="fairly" <?php if(isset($_POST['familiar']) && $_POST['familiar'] == 'fairly') echo 'checked="checked"'  ;?>>I'm fairly familiar, I've read some books and visited some cool places :)</li>
 <li><input type="radio" name="familiar" value="very" <?php if(isset($_POST['familiar']) && $_POST['familiar'] == 'very') echo 'checked="checked"'  ;?>>I'm a pro! I'm extremely knowledgable about architecture.</li>
 </ul>  
-  <span class="error"><?php echo $familiarErr   ;?></span>  
+  <div class="error"><?php echo $familiarErr   ;?></div>  
 
     <label>Which architect would you like to learn more about?</label> 
 <select name="arch">
-<option value="NULL" <?php if(isset($_POST['arch']) && $_POST['arch'] == 'NULL') echo 'selected="unselected"'  ;?>>20th and 21st Century architects</option> 
+<!--<option value="NULL" <?php if(isset($_POST['arch']) && $_POST['arch'] == 'NULL') echo 'selected="unselected"'  ;?>>20th and 21st Century architects</option> -->
 <option value="rem" <?php if(isset($_POST['arch']) && $_POST['arch'] == 'rem') echo 'selected="selected"'  ;?>>Rem Koolhaas</option> 
 <option value="ettore" <?php if(isset($_POST['arch']) && $_POST['arch'] == 'ettore') echo 'selected="selected"'  ;?>>Ettore Sottsass</option> 
 <option value="frank" <?php if(isset($_POST['arch']) && $_POST['arch'] == 'frank') echo 'selected="selected"'  ;?>>Frank Lloyd Wright</option> 
@@ -35,7 +35,7 @@
 <option value="le" <?php if(isset($_POST['arch']) && $_POST['arch'] == 'le') echo 'selected="selected"'  ;?>>Le Corbusier</option>
 <option value="all" <?php if(isset($_POST['arch']) && $_POST['arch'] == 'all') echo 'selected="selected"'  ;?>>Can't pick! I'm interested in them all!</option>
 </select> 
-    <span class="error"><?php echo $archErr   ;?></span>
+    <div class="error"><?php echo $archErr;?></div>
 
 <label>What are some of your favorite architectural movements?</label>   
 <ul>
@@ -47,19 +47,19 @@
 <li><input type="checkbox" name="styles[]" value="victorian" <?php if(isset($_POST['styles']) && in_array('victorian', $styles)) echo 'checked="checked"';?>>Victorian</li>
 <li><input type="checkbox" name="styles[]" value="modernist" <?php if(isset($_POST['styles']) && in_array('modernist', $styles)) echo 'checked="checked"';?>>Modernist</li>
 </ul> 
-<span class="error"><?php echo $stylesErr   ;?></span>
+<div class="error"><?php echo $stylesErr   ;?></div>
 
 
 
 <label>Anything else you'd like to tell us? Cool new building or architect you've learned about? We'd love to hear from you!</label>   
 <textarea name="comments"><?php if(isset($_POST['comments'])) echo htmlspecialchars($_POST['comments']) ;?></textarea>  
-<span class="error"><?php echo $commentsErr   ;?></span>
+<div class="error"><?php echo $commentsErr   ;?></div>
 
     <label>Agree with us ...or else...!!!</label>
 <ul>
 <li><input type="radio" name="agree" value="agree" <?php if(isset($_POST['agree']) && $_POST['agree'] == 'agree') echo 'checked="checked"'  ;?>>Ok, fine.</li>    
 </ul> 
-    <span class="error"><?php echo $agreeErr   ;?></span>
+    <div class="error"><?php echo $agreeErr   ;?></div>
     
 <input class="btn" type="submit" value="Off it goes!">
     

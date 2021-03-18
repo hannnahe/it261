@@ -67,7 +67,7 @@ die(myError(__FILE__,__LINE__,mysqli_error($db)));
 $user = mysqli_fetch_assoc($result);    
     
 if($user) {
- if($user['UserName'] == $Username){
+ if($user['UserName'] == $UserName){
      array_push($errors, 'Username already exists');
  }
     

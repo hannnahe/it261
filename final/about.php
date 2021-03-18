@@ -32,15 +32,16 @@ if(isset($_SESSION['UserName'])) :?>
 <a href="index.php?logout='1'">Log out</a>    
 </div>
 <?php endif; ?>
-<h1>Welcome to our About page!</h1>
-<h3>This is the content in main</h3>
-<p>this page will contain 2 screenshots of the db.. </p>
+<h1 class="center">About the Databases used for this project:</h1>
+<h3 class="center aboutpg">Architecture Table</h3>
+<img class="switch aboutpg" src="images/db1.jpg" alt="ArchTable">
 
 </main>
 
 
 <aside>
-    <h3>This is the aside content</h3>
+    <h3 class="center aboutpg">Users Table</h3>
+    <img class="bottom" src="images/db2.jpg" alt="UserTable">
 </aside>
 
 

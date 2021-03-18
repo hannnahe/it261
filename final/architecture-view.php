@@ -62,16 +62,18 @@ if(isset($_SESSION['UserName'])) :?>
 <a href="index.php?logout='1'">Log out</a>    
 </div>
 <?php endif; ?>
-<h1>The <?php echo $style;?> Style!</h1>
+<h1 class="center">The <?php echo $style;?> Style!</h1>
 <?php 
 if($feedback == ''){
-  echo '<ul>';
-    echo '<li>This style was introduced and gained traction during the '.$period.'.</li>';
-    echo '<li> '.$style.' was first and foremost built in '.$location.'.</li>';
-    echo '<li>'.$architects.'</li>';
+  echo '<div class= "view">';
+    echo '<ul>';
+    echo '<li class="about">This style was introduced and gained traction during the '.$period.'.</li>';
+    echo '<li class="about">The '.$style.' style was first and foremost built in '.$location.'.</li>';
+    echo '<li class="about">'.$architects.'</li>';
     echo '</ul>'; 
-    echo '<p>'.$description.'</p>';
-    echo 'Last but not least, some famous works for you to look into: '.$works.'';
+    echo '<p class="about">'.$description.'</p>';
+    echo '<p class="about"><b>Last but not least, some famous works for you to look into</b>: '.$works.'</p>';
+    echo '</div>';
     echo'<div><a class="btn" href="architecture.php">Go back!</a></div>';
 } else {
     echo $feedback;
@@ -81,9 +83,22 @@ if($feedback == ''){
 
 
 <aside>
-    <h3>images to be here</h3>
+    <h3  class="center">Some great examples of <?php echo $style ;?> Architecture</h3>
+<?php 
+if($feedback == ''){
+echo '<img src="images/styles/style'.$id.'_1.jpg" alt="'.$style.'_1">';
+echo '<img src="images/styles/style'.$id.'_2.jpg" alt="'.$style.'_2">';
+echo '<img class="bottom" src="images/styles/style'.$id.'_3.jpg" alt="'.$style.'_3">';
+}
+?>
+
+
+
 </aside>
 
 
-</div> <!--endwrapper--!>
-<?php include('includes/footer.php');
+</div> 
+<?php
+mysqli_free_result($result);
+mysqli_close($iConn);
+include('includes/footer.php');

@@ -1,6 +1,7 @@
 <?php
 //config page will communicate with credentials page
 ob_start(); //prevents header errors before reading the whole page
+
 define('THIS_PAGE', basename($_SERVER['PHP_SELF']));
 define('DEBUG', 'TRUE'); //we want to see our errors
 
@@ -71,8 +72,8 @@ $firstName=' ';
 $lastName=' ';
 $email=' ';
 $familiar=' ';
-$styles=' ';
 $arch=' ';
+$styles=' ';
 $comments=' ';
 $agree=' ';
 $phone=' ';
@@ -81,8 +82,8 @@ $firstNameErr=' ';
 $lastNameErr=' ';
 $emailErr=' ';
 $familiarErr=' ';
-$stylesErr=' ';
 $archErr=' ';
+$stylesErr=' ';
 $commentsErr=' ';
 $agreeErr=' ';
 $phoneErr=' ';
@@ -133,11 +134,11 @@ if(empty($_POST['styles'])){
     $styles = $_POST['styles'];
 }    
     
-if($_POST['arch'] == 'NULL'){
-    $archErr= 'Choose an architect to learn more about.';
-} else {
-    $arch = $_POST['arch'];
-} 
+//if($_POST['arch'] == 'NULL'){
+//    $archErr= 'Choose an architect to learn more about.';
+//} else {
+//    $arch = $_POST['arch'];
+//} 
    
 if(empty($_POST['comments'])){
     $commentsErr= 'Tell me more!';
@@ -177,23 +178,24 @@ if(!empty($_POST['styles'])) {
         Phone #: '.$phone.''.PHP_EOL.'
         Current level of familiarity with architecture: '.$familiar.''.PHP_EOL.'
         Comments: '.$comments.''.PHP_EOL.'
-        Who you\'d like to learn more about: '.$arch.''.PHP_EOL.'
         Favorite architectural movements: '.myStyles().'';
-    $headers = array(
+    
+     $headers = array(
     'From' => 'no-reply@hannaheberts.com',
     'Reply-to' => ' '.$email.' ',
     );
      
 
 if($_POST['firstName'] !== '' && 
-  $_POST['lastName'] !== '' &&
-  $_POST['email'] !== '' &&
-  $_POST['styles'] !== '' &&
-  $_POST['comments'] !== '' &&
-  $_POST['familiar'] !== '' &&
-  $_POST['agree'] !== '' && 
-$_POST['phone'] !== '' && preg_match('/^[0-9]{3}-[0-9]{3}-[0-9]{4}$/', $_POST['phone']) &&
-  $_POST['arch'] !== 'NULL'){
+$_POST['lastName'] !== '' &&
+$_POST['email'] !== '' &&
+$_POST['styles'] !== '' &&
+$_POST['comments'] !== '' &&
+$_POST['familiar'] !== '' &&
+$_POST['agree'] !== '' && 
+$_POST['phone'] !== '' &&
+   preg_match('/^[0-9]{3}-[0-9]{3}-[0-9]{4}$/', $_POST['phone']) &&
+$_POST['arch'] !== 'NULL'){
     
 mail($to, $subject, $body, $headers);
 header('Location:feedback.php');
